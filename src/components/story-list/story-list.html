@@ -1,0 +1,7 @@
+<ion-list>
+  <button ion-item *ngFor="let story of storyList" (click)="selectStory(story)">
+    <h2>{{ story.title }}</h2>
+    <h3>{{ story.author }}</h3>
+    <p>{{ story.summary }}</p>
+  </button>
+</ion-list>
